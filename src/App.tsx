@@ -1,11 +1,17 @@
-import Layout from "@/components/layout";
+import { Route, Routes } from "react-router";
+import HomeScreen from "./pages/HomeScreen";
+import Layout from "./components/layout";
+import PostDetailsScreen from "./pages/PostDetailsScreen";
+import NotFoundScreen from "./pages/NotFoundScreen";
 function App() {
 return (
-<Layout>
-<p className="mt-10 text-muted-foreground">
-Posts will appear here in Lab 11.
-</p>
-</Layout>
+<Routes>
+<Route path="/" element={<Layout />}>
+<Route index element={<HomeScreen />} />
+<Route path="posts/:postId" element={<PostDetailsScreen />} />
+<Route path="*" element={<NotFoundScreen />} />
+</Route>
+</Routes>
 );
 }
 export default App;
