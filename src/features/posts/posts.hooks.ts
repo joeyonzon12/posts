@@ -7,9 +7,10 @@ export const usePosts = () => {
  queryFn: () => getPosts(),
  });
 };
-export const usePost = (id: Post["id"]) => {
+export const usePost = (id: Post["id"], enabled = true) => {
  return useQuery({
  queryKey: ["post", id],
  queryFn: () => getPost(id),
+ enabled,
  });
 };
