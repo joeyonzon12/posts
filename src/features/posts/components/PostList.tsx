@@ -19,12 +19,10 @@ const PostList = () => {
  if (isError)
  return (
  <div className="mt-16 max-w-sm">
-<h1 className="font-reading text-[1.75rem] leading-[1.15] tracking-[-
-0.01em]">
+<h1 className="font-reading text-[1.75rem] leading-[1.15] tracking-[-0.01em]">
     The posts didn't load
  </h1>
- <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted-foregr
-ound">
+ <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted-foreground">
  {error.message}
  </p>
  <Button variant="outline" className="mt-6" onClick={() => refetch()}>

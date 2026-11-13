@@ -15,9 +15,7 @@ const Layout = () => {
  ) : (
  <Link
  to="/"
- className="inline-flex items-center gap-2 text-sm text-muted-fo
-reground transition-colors hover:text-foreground focus-visible:outline-2 focu
-s-visible:outline-offset-4 focus-visible:outline-ring"
+ className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
  >
  <ArrowLeft className="size-4" />
  All posts

@@ -11,12 +11,10 @@ const PostRow = ({ post }: { post: Post }) => {
  return (
  <Card size="sm" className="relative">
  <CardHeader>
- <h2 className="min-w-0 font-reading text-[1.375rem] leading-[1.25] fo
-nt-normal tracking-[-0.01em] text-balance">
+ <h2 className="min-w-0 font-reading text-[1.375rem] leading-[1.25] font-normal tracking-[-0.01em] text-balance">
  <Link
  to={`/posts/${post.id}`}
- className="underline-offset-[0.2em] before:absolute before:inset0 before:content-[''] hover:underline focus-visible:outline-2 focus-visible:o
-utline-offset-4 focus-visible:outline-ring"
+ className="underline-offset-[0.2em] before:absolute before:inset-0 before:content-[''] hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
  >
  {post.title}
  </Link>
@@ -26,7 +24,7 @@ utline-offset-4 focus-visible:outline-ring"
  </CardAction>
  </CardHeader>
  <CardContent>
- <p className="line-clamp-2 text-[0.9375rem] leading-[1.6] text-mutedforeground">
+ <p className="line-clamp-2 text-[0.9375rem] leading-[1.6] text-muted-foreground">
  {post.body}
  </p>
  </CardContent>
